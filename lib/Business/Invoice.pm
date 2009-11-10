@@ -51,6 +51,7 @@ sub function2 {
 =head1 AUTHOR
 
 Diego Kuperman, C<< <diego at freekeylabs.com> >>
+Enrique Nell, C<< <perl_nell at telefonica.net> >>
 
 =head1 BUGS
 
@@ -92,6 +93,8 @@ L<http://search.cpan.org/dist/Business-Invoice/>
 
 
 =head1 ACKNOWLEDGEMENTS
+
+
 
 
 =head1 COPYRIGHT & LICENSE
