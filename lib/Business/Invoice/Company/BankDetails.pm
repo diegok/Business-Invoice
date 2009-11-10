@@ -1,52 +1,54 @@
 package Business::Invoice::Company::BankDetails;
-
-use warnings;
-use strict;
+use Moose;
 
 =head1 NAME
 
-Business::Invoice::Company::BankDetails - The great new Business::Invoice::Company::BankDetails!
-
-=head1 VERSION
-
-Version 0.01
-
-=cut
-
-our $VERSION = '0.01';
-
+Business::Invoice::Company::BankDetails - A company bank account data for invoicing
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
+...
 
-Perhaps a little code snippet.
-
-    use Business::Invoice::Company::BankDetails;
-
-    my $foo = Business::Invoice::Company::BankDetails->new();
-    ...
-
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
-
-=head1 FUNCTIONS
-
-=head2 function1
+=head1 METHODS
 
 =cut
 
-sub function1 {
-}
+=head2 number
+=cut
+has 'number' => (
+    is       => 'rw',
+    isa      => 'Str',
+    required => 1
+);
 
-=head2 function2
+=head2 swift_code
+=cut
+has 'swift_code' => (
+    is => 'rw',
+    isa => 'Str',
+);
+
+# name and address -> Business::Invoice::Company
+
+=head2 name
+=cut
+has 'name' => (
+    is => 'rw',
+    isa => 'Str',
+);
+
+=head2 address
+=cut
+has 'address' => (
+    is => 'rw',
+    isa => 'Business::Invoice::Company::Address',
+);
+
+=head2 meta
+
+    provided by moose.
 
 =cut
-
-sub function2 {
-}
 
 =head1 AUTHOR
 

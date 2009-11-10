@@ -1,52 +1,39 @@
 package Business::Invoice::Company::Address;
-
-use warnings;
-use strict;
+use Moose;
 
 =head1 NAME
 
-Business::Invoice::Company::Address - The great new Business::Invoice::Company::Address!
-
-=head1 VERSION
-
-Version 0.01
-
-=cut
-
-our $VERSION = '0.01';
-
+Business::Invoice::Company::Address - A company address for invoicing
 
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
-
-Perhaps a little code snippet.
-
     use Business::Invoice::Company::Address;
+    my $address = Business::Invoice::Company::Address->new();
 
-    my $foo = Business::Invoice::Company::Address->new();
-    ...
-
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
-
-=head1 FUNCTIONS
-
-=head2 function1
-
+=head1 METHODS
 =cut
 
-sub function1 {
-}
+=head2 address
+=cut
+has 'address' => ( is => 'rw', isa => 'Str', required => 1 );
 
-=head2 function2
+=head2 country
+=cut
+has 'country' => ( is => 'rw', isa => 'Str' );
+
+=head2 state
+=cut
+has 'state'   => ( is => 'rw', isa => 'Str' );
+
+=head2 zipcode
+=cut
+has 'zipcode' => ( is => 'rw', isa => 'Str' );
+
+=head2 meta
+    
+    provided by moose.
 
 =cut
-
-sub function2 {
-}
 
 =head1 AUTHOR
 

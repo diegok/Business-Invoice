@@ -5,7 +5,7 @@ use strict;
 
 =head1 NAME
 
-Business::Invoice - The great new Business::Invoice!
+Business::Invoice - Invoice your clients from perl
 
 =head1 VERSION
 
@@ -15,38 +15,16 @@ Version 0.01
 
 our $VERSION = '0.01';
 
-
 =head1 SYNOPSIS
 
-Quick summary of what the module does.
+This is an invoice representation. 
 
-Perhaps a little code snippet.
+    use Business::Billing::Invoice;
 
-    use Business::Invoice;
-
-    my $foo = Business::Invoice->new();
+    my $foo = Business::Billing::Invoice->new();
     ...
 
-=head1 EXPORT
-
-A list of functions that can be exported.  You can delete this section
-if you don't export anything, such as for a purely object-oriented module.
-
-=head1 FUNCTIONS
-
-=head2 function1
-
-=cut
-
-sub function1 {
-}
-
-=head2 function2
-
-=cut
-
-sub function2 {
-}
+=head1 METHODS
 
 =head1 AUTHOR
 
@@ -58,15 +36,11 @@ Please report any bugs or feature requests to C<bug-business-invoice at rt.cpan.
 the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Business-Invoice>.  I will be notified, and then you'll
 automatically be notified of progress on your bug as I make changes.
 
-
-
-
 =head1 SUPPORT
 
 You can find documentation for this module with the perldoc command.
 
     perldoc Business::Invoice
-
 
 You can also look for information at:
 
@@ -90,7 +64,6 @@ L<http://search.cpan.org/dist/Business-Invoice/>
 
 =back
 
-
 =head1 ACKNOWLEDGEMENTS
 
 
@@ -103,7 +76,6 @@ under the terms of either: the GNU General Public License as published
 by the Free Software Foundation; or the Artistic License.
 
 See http://dev.perl.org/licenses/ for more information.
-
 
 =cut
 
