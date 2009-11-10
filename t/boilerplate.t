@@ -57,7 +57,5 @@ TODO: {
   module_boilerplate_ok('lib/Business/Invoice/Item.pm');
   module_boilerplate_ok('lib/Business/Invoice/Company/Address.pm');
   module_boilerplate_ok('lib/Business/Invoice/Company/BankDetails.pm');
-
-
 }
 
